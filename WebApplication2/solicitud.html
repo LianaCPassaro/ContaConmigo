@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contá Conmingo! Solicitud</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Liana Carla Passaro">
+    <meta name="description" content="Sitio web para conectar solicitudes de donación de sangre y donantes.">
+    <meta name="Keywords" content="donante, argentina, donación, médula, ósea">
+    <meta name="viewport" content="width=device-width", initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav id="tb">
+        <div id="tbic">Ξ</div>
+        <ul id="tbul">
+            <li id="sol" class="sel"> <a href="solicitud.html">SOLICITUD</a></li>
+            <li id="nov"><a href="novedades.html">NOVEDADES</a></li>
+            <li id="medos"><a href="#">MÉDULA ÓSEA</a></li>
+            <li id="inf"><a href="#">INFORMACIÓN PARA EL DONANTE</a></li>
+            <li id="cont"><a href="#">CONTÁCTANOS</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contá Conmigo!</h1>
+
+    <h2>Solicitud Donantes</h2>
+
+    <!--Form-->
+    <div class="container">
+        <h3>Por favor, completa el siguiente formulario</h3>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastname">Apellido del Paciente</label>
+                <div class="col-sm-10">
+                    <input type="lastname" class="form-control" id="lastname" placeholder="Ingrese el apellido del Paciente">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nombrepaciente">Nombre del Paciente</label>
+                <div class="col-sm-10">
+                    <input type="firstname" class="form-control" id="firstname" placeholder="Ingrese nombre completo ">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="CantDonantes">Cant. Donantes </label>
+                <div class="col-sm-10">
+                        <input type="cantdonantes" class="form-control" id="cantdonantes" placeholder="Ingrese la cantidad de donantes">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="gruposanguineo">Grupo Sanguíneo</label>
+                    <div class="col-sm-10">
+                        <label class="container">A
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">B
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">0
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="factorsanguineo">Factor Sanguíneo</label>
+                    <div class="col-sm-10">
+                        <label class="container">+
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">-
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fechalimite">Fecha Límite Reposición</label>
+                <div class="col-sm-10">
+                        <input type="cantdonantes" class="form-control" id="fechalimite" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2"  for="institución">Institución</label>
+                <div class="col-sm-10">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione una Opción
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sanatorio Parque</a></li>
+                            <li><a href="#">Sanatorio de la Mujer</a></li>
+                            <li><a href="#">Sanatorio Británico</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2"  for="Provincia">Provincia</label>
+                <div class="col-sm-10">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione una Provincia
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Santa Fe</a></li>
+                            <li><a href="#">Santiago del Estero</a></li>
+                            <li><a href="#">Tucumán</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2"  for="localidad">Localidad</label>
+                <div class="col-sm-10">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione una Localidad
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Rosario</a></li>
+                            <li><a href="#">Las Rosas</a></li>
+                            <li><a href="#">Cañada de Gómez</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label col-sm-2" for="Comentario">Comentarios</label>
+                    <div class="col-sm-10">
+                            <input type="cantdonantes" class="form-control" id="cantdonantes" placeholder="Ingrese sus comentarios">
+                    </div>
+                </div>
+            <button type="enviar" class="btn btn-default">Enviar Formulario</button>
+            </form>
+            </div>
+
+
+</body>
+</html>

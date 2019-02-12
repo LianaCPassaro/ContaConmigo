@@ -1,0 +1,220 @@
+﻿body {
+   
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+    /* Menú Options*/
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+    li a:hover {
+            background-color: #111;
+    }
+
+   
+    #tb {
+        display: block;
+        height: 4.2em;
+        line-height: 4.2em;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        background: #767676;
+        background: -moz-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#a8a8a8),color-stop(100%,#454545));
+        background: -webkit-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -o-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -ms-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: linear-gradient(to bottom,#a8a8a8 0,#454545 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8a8a8',endColorstr='#454545',GradientType=0);
+        border-bottom: 1px solid #323232;
+        color: #262626;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+    }
+
+
+    #tb ul {
+        display: inline-block;
+        opacity: 1;
+        top: 0;
+        height: 4.2em;
+        margin: 0 auto;
+        padding: 0;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        border-left: 1px solid rgba(0,0,0,0.2);
+    }
+
+    #tb li {
+        display: inline-block;
+        height: 4.2em;
+        line-height: 4.2em;
+        vertical-align: top;
+        color: #262626;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+        border-left: 1px solid rgba(255,255,255,0.2);
+        border-right: 1px solid rgba(0,0,0,0.2);
+        background: #767676;
+        background: -moz-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#a8a8a8),color-stop(100%,#454545));
+        background: -webkit-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -o-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: -ms-linear-gradient(top,#a8a8a8 0,#454545 100%);
+        background: linear-gradient(to bottom,#a8a8a8 0,#454545 100%);
+    }
+
+    
+
+    #tb li.sel {
+        display: inline-block;
+        height: 4.5em;
+        line-height: 4.2em;
+        color: #262626;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+        border-left: 1px solid rgba(255,255,255,0.2);
+        border-right: 1px solid rgba(0,0,0,0.2);
+        background: #858585;
+        background: -moz-linear-gradient(top,#73abe6 0,#334c66 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#73abe6),color-stop(100%,#334c66));
+        background: -webkit-linear-gradient(top,#73abe6 0,#334c66 100%);
+        background: -o-linear-gradient(top,#73abe6 0,#334c66 100%);
+        background: -ms-linear-gradient(top,#73abe6 0,#334c66 100%);
+        background: linear-gradient(to bottom,#73abe6 0,#334c66 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73abe6',endColorstr='#334c66',GradientType=0);
+        -moz-border-radius: 0 0 4px 4px;
+        -webkit-border-radius: 0 0 4px 4px;
+        -khtml-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+        -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    #tb a {
+        display: inline-block;
+        position: relative;
+        height: 4.2em;
+        line-height: 4.2em;
+        color: #262626;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+        padding: 0 2em;
+        text-decoration: none;
+        z-index: 4;
+    }
+
+    #tb a:hover {
+        color: white;
+
+    }
+
+    #tbic {
+        display: none;
+    }
+
+    @media screen and (max-width: 430px) 
+    {
+    #tbic {
+            display: block;
+            cursor: pointer;
+            font-size: 2em;
+            position: relative;
+            z-index: 2;
+            padding-left: 1em;
+            text-align: left;
+            background: #9fb5fe;
+            background: -moz-linear-gradient(top,#a8a8a8 0,#454545 100%);
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#a8a8a8),color-stop(100%,#454545));
+            background: -webkit-linear-gradient(top,#a8a8a8 0,#454545 100%);
+            background: -o-linear-gradient(top,#a8a8a8 0,#454545 100%);
+            background: -ms-linear-gradient(top,#a8a8a8 0,#454545 100%);
+            background: linear-gradient(to bottom,#a8a8a8 0,#454545 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8a8a8',endColorstr='#454545',GradientType=0);
+            -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+            -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            }      
+    }
+/* RadioButton 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+   Hide the browser's default radio button 
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button 
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color 
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background 
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked 
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) 
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+/*
