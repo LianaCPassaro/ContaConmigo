@@ -31,7 +31,6 @@
         </ul>
     </nav>
 	
-	
     <h1><center>Contá Conmingo - Red de Donantes</center></h1>
     <h2>Solicitud de Donantes</h2>
     <h4>Por favor, completa el siguiente formulario:</h4>
@@ -48,15 +47,14 @@
             </div>
         </div>
         <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputdate">Fecha Límite Reposición</label>
-                <input type="Date" class="form-control" id="inputdate" placeholder="Fecha límite de Reposición" index="3">
-                </div>
-                <div class="form-group col-md-6">
-                <label for="cantDonantes">Cant Donantes</label>
-                <input type="text" class="form-control" id="cantDonantes" placeholder="Cantidad de Donantes" index="4">
-                </div>
-        </div>
+
+    <div style="padding:115px;">
+        <h1><center>Contá Conmingo - Red de Donantes</center></h1>
+        <h2>Solicitud de Donantes</h2>
+        <h4>Por favor, completa el siguiente formulario:</h4>
+
+        <form>
+           
         
 		<div class="form-row">
             <div class="form-group col-md-4">
@@ -109,9 +107,79 @@
                     <label class="container">-
                     <input type="checkbox"  index="12">
                     <span class="checkmark"></span>
-                    </label>
-                </label>
+
             </div>
+            <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputdate">Fecha Límite Reposición</label>
+                    <input type="Date" class="form-control" id="inputdate" placeholder="Fecha límite de Reposición" index="3">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="cantDonantes">Cant Donantes</label>
+                    <input type="text" class="form-control" id="cantDonantes" placeholder="Cantidad de Donantes" index="4">
+                    </div>
+            </div>
+            
+            
+            
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCity">Ciudad</label>
+                    <select id="inputCity" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Rosario</option>
+                        <option>Las Rosas</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Provincia</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Santa Fe</option>
+                        <option>Córdoba</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputInstitution">Institución</label>
+                    <select id="inputInstitution" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Mapaci</option>
+                        <option>Británico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputGrupo">Grupo Sanguíneo</label>
+                    <label class="container">A
+                        <input type="checkbox" tabindex="5" placeholder="Grupo sanguíneo A">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">B
+                        <input type="checkbox"  tabindex="6" placeholder="Grupo sanguíneo B">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">0
+                        <input type="checkbox" tabindex="7" placeholder="Grupo sanguíneo 0">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="factorsanguineo">Factor Sanguíneo</label>
+                    <label class="container">+  
+                        <input type="checkbox" tabindex="5">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="container">-
+                        <input type="checkbox"  tabindex="6">
+                        <span class="checkmark"></span>
+                        </label>
+
+                    </label>
+                </div>
+            </div>
+
         </div>
 		<div class="form-row">
             <div class="form-group col-md-12">
@@ -128,6 +196,27 @@
         </div>
     </form>
  
+
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12"></div>
+                    <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
 
 
 
