@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contá Conmingo! Solicitud</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Liana Carla Passaro">
+    <meta name="description" content="Sitio web para conectar solicitudes de donación de sangre y donantes.">
+    <meta name="Keywords" content="donante, argentina, donación, médula, ósea">
+    <meta name="viewport" content="width=device-width", initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav id="tb">
+        <div id="tbic">Ξ</div>
+        <ul id="tbul">
+            <li id="sol" class="sel"> <a href="solicitud.html">SOLICITUD</a></li>
+            <li id="nov"><a href="novedades.html">NOVEDADES</a></li>
+            <li id="medos"><a href="#">MÉDULA ÓSEA</a></li>
+            <li id="inf"><a href="#">INFORMACIÓN PARA EL DONANTE</a></li>
+            <li id="cont"><a href="#">CONTÁCTANOS</a></li>
+        </ul>
+    </nav>
+	
+	
+    <div style="margin-left: 80px;"><h1><center>Contá Conmingo - Red de Donantes</center></h1></div>
+    <h2>Inscripción como Donante</h2>
+    <h4>Por favor, completa el siguiente formulario para inscribirte como donante regular. <br> Serás notificado respecto a solicitudes de donación en caso de que coincida con el grupo sanguíneo y el período mínimo requerido para volver a donar.
+	
+	</h4>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputName">Nombre</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Nombre del Paciente" index="1">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputLastName">Apellido</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Apellido del Paciente" index="2">
+            </div>
+        </div>
+        
+		<div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputCity">Ciudad</label>
+                <select id="inputCity" class="form-control" index = 5>
+                    <option selected>Choose...</option>
+                    <option>Rosario</option>
+                    <option>Las Rosas</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control" index = 6>
+                    <option selected>Choose...</option>
+                    <option>Santa Fe</option>
+                    <option>Córdoba</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputInstitution">Institución</label>
+                <select id="inputInstitution" class="form-control" index = 7>
+                    <option selected>Choose...</option>
+                    <option>Mapaci</option>
+                    <option>Británico</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="inputdate">Fecha Ultima Extracción</label>
+				<input type="Date" class="form-control" id="inputdate" placeholder="Fecha ultima Extracción" index="3">
+			</div>
+            <div class="form-group col-md-4">
+                <label for="inputGrupo">Grupo Sanguíneo</label>
+                <label class="container">A
+                    <input type="checkbox" index="8" placeholder="Grupo sanguíneo A">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">B
+                    <input type="checkbox"  index="9" placeholder="Grupo sanguíneo B">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">0
+                    <input type="checkbox" index="10" placeholder="Grupo sanguíneo 0">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="factorsanguineo">Factor Sanguíneo</label>
+                <label class="container">+  
+                    <input type="checkbox" index="11">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">-
+                    <input type="checkbox"  index="12">
+                    <span class="checkmark"></span>
+                    </label>
+                </label>
+            </div>
+			
+        </div>
+	
+
+
+		<div class="form-row">
+            <div class="form-group col-md-12">
+				<div style="text-align: right;">
+					<button type="button" tabindex = 14 class="btn btn-primary">Enviar Formulario</button>
+				</div>
+            </div>
+        </div>
+    </form>
+ 
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
