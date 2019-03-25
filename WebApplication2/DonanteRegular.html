@@ -21,10 +21,8 @@
     <nav id="tb">
         <div id="tbic">Ξ</div>
         <ul id="tbul">
-			<li id="sol" > <img src="./Images/MainLogo.jpg" alt="Main Logo Picture"></li>
-            <li id="sol" > <a href="solicitud.html">SOLICITUD</a></li>
-			<li id="sol" > <a href="DonanteRegular.html">INSCRIPCIÓN</a></li>
-            <li id="nov" class="sel"><a href="novedades.html">NOVEDADES</a></li>
+            <li id="sol" class="sel"> <a href="solicitud.html">SOLICITUD</a></li>
+            <li id="nov"><a href="novedades.html">NOVEDADES</a></li>
             <li id="medos"><a href="#">MÉDULA ÓSEA</a></li>
             <li id="inf"><a href="#">INFORMACIÓN PARA EL DONANTE</a></li>
             <li id="cont"><a href="#">CONTÁCTANOS</a></li>
@@ -32,9 +30,11 @@
     </nav>
 	
 	
-    <h1><center>Contá Conmingo - Red de Donantes</center></h1>
-    <h2>Solicitud de Donantes</h2>
-    <h4>Por favor, completa el siguiente formulario:</h4>
+    <div style="margin-left: 80px;"><h1><center>Contá Conmingo - Red de Donantes</center></h1></div>
+    <h2>Inscripción como Donante</h2>
+    <h4>Por favor, completa el siguiente formulario para inscribirte como donante regular. <br> Serás notificado respecto a solicitudes de donación en caso de que coincida con el grupo sanguíneo y el período mínimo requerido para volver a donar.
+	
+	</h4>
 
     <form>
         <div class="form-row">
@@ -46,16 +46,6 @@
             <label for="inputLastName">Apellido</label>
             <input type="text" class="form-control" id="inputLastName" placeholder="Apellido del Paciente" index="2">
             </div>
-        </div>
-        <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputdate">Fecha Límite Reposición</label>
-                <input type="Date" class="form-control" id="inputdate" placeholder="Fecha límite de Reposición" index="3">
-                </div>
-                <div class="form-group col-md-6">
-                <label for="cantDonantes">Cant Donantes</label>
-                <input type="text" class="form-control" id="cantDonantes" placeholder="Cantidad de Donantes" index="4">
-                </div>
         </div>
         
 		<div class="form-row">
@@ -85,7 +75,11 @@
             </div>
         </div>
         <div class="form-row">
-            <div class="form-group col-md-6">
+			<div class="form-group col-md-4">
+				<label for="inputdate">Fecha Ultima Extracción</label>
+				<input type="Date" class="form-control" id="inputdate" placeholder="Fecha ultima Extracción" index="3">
+			</div>
+            <div class="form-group col-md-4">
                 <label for="inputGrupo">Grupo Sanguíneo</label>
                 <label class="container">A
                     <input type="checkbox" index="8" placeholder="Grupo sanguíneo A">
@@ -100,7 +94,7 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-4">
                 <label for="factorsanguineo">Factor Sanguíneo</label>
                 <label class="container">+  
                     <input type="checkbox" index="11">
@@ -112,13 +106,11 @@
                     </label>
                 </label>
             </div>
+			
         </div>
-		<div class="form-row">
-            <div class="form-group col-md-12">
-                <label for="comentarios">Comentarios</label>
-                <textarea class="form-control" id="comentarios" rows="3" index =13></textarea>
-            </div>
-        </div>
+	
+
+
 		<div class="form-row">
             <div class="form-group col-md-12">
 				<div style="text-align: right;">

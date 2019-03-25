@@ -3,8 +3,11 @@
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
 
+}/*Estilo de Formulario*/
+.form_center {
+	text-align:center;
+}
 
 
     /* Menú Options*/
